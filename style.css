@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+/*HEADER*/
+header{
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 13px;
+    padding-top: 16px;
+    
+}
+header figure{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+header figure img{
+    width: 58px;
+    padding-right: 10px;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;  
+    padding-right: 35px;
+}
+header nav ul li a{
+    padding: 13px;
+}
+
+/*MAIN*/
+.primeiraClass img{
+    padding: 25px;
+}
+.primeiraClass{
+    background-image: url(assets/husky.png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+}
+.primeiraClass section{
+    padding-top: 100px;
+    font-size:x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.segundaClass img{
+    width: 10vw;
+}
+.segundaClass{
+    background-image: url(assets/leao.png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: black;
+}
+.segundaClass section{
+    padding-top: 25vh;
+    font-size:x-large;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    width: 35vw;
+    padding-left: 7vw;
+}
+.segundaClass section p{
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+}
+#botaoPreto{
+    display: flex;
+    border-radius: 5vh;
+    background-color: #3A342F;
+    color: white;
+    padding-top: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh; 
+    padding-bottom: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}  
+
+.terceiraClass{
+    background-image: url(assets/littleDog.png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;  
+}
+.terceiraClass section{
+    padding-top: 18vh;
+    font-size:x-large;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 24vw;
+    margin-left: 112vh;
+}
+.terceiraClass section p{
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+}
+#botaoBranco{
+    display: flex;
+    border-radius: 5vh;
+    background-color: #FFFFFF;
+    color: #3A342F;
+    padding-top: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh; 
+    padding-bottom: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}  
+
+.apoio{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,700;1,8..144,300&family=Roboto:wght@100;400&display=swap');
+    font-family: 'Roboto Serif', serif;
+    padding: 9vh;
+    background-color: #FFFFFF;
+    color: #FD6A9A;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-style: italic;
+    margin-left: 10vw;
+    margin-right: 11vw;
+}
+.apoio section a{
+    margin-left: 20vw;
+    margin-right: 2vw;
+}
+
+/*FOOTER*/
+#footerMobile{
+    display: none;
+}
+footer{
+    background-color: #EB4A7B;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    display: flex;
+    padding: 10vh;
+}
+footer section{
+    width: 16vw;
+}
+footer section h2{
+    font-weight: bold;
+    padding-bottom: 4vh;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&family=Roboto:wght@100;400&display=swap');
+    font-family: 'Roboto Serif';
+}
+footer section ul{
+    list-style-type: none; 
+}
+footer section ul a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer section ul li{
+    height: 4vh;
+}
+a:hover{
+    color: rgb(79, 79, 233);
+}
+.subtitulo{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&family=Roboto:wght@100;400&display=swap');
+    font-family: 'Roboto Serif';
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+
+    /*HEADER*/
+    .mobileRmIcon{
+        display: none;
+    }
+    header figure{
+        padding-left: 5px;
+    }
+    header nav ul{
+        padding-right: 5px;
+    }
+
+    /*MAIN*/
+    .primeiraClass{
+        background-image: url(assets/huskyMobile.png);
+    }
+    .primeiraClass section h2{
+        font-size: 4vh;
+    }
+    .primeiraClass section img{
+        width: 39vw;
+    }
+
+
+    .segundaClass{
+        background-image: url(assets/leaoMobile.png);
+    }
+    .segundaClass section{
+        padding-top: 5vh;
+    }
+    .segundaClass section h2{
+        font-size: 4vh;
+        width: 100vw;
+    }
+    .segundaClass section p{
+        font-size: 3vh;
+        width: 90vw;
+    }
+    #botaoPreto{
+        font-size: 20px;
+        width: 22vh;
+        padding-top: 2vh;
+        padding-left: 3vh;
+        padding-right: 1vh; 
+        padding-bottom: 2vh;
+        
+    }
+
+    .terceiraClass{
+        background-image: url(assets/littleDogMobile.png);
+    }
+    .terceiraClass section{
+        padding-top: 5vh;
+        margin-left: 0px;
+        margin-left: 7vw;
+    }
+    .terceiraClass section h2{
+        font-size: 4vh;
+        width: 100vw;
+    }
+    .terceiraClass section p{
+        font-size: 3vh;
+        width: 90vw;
+    }
+    #botaoBranco{
+        font-size: 20px;
+        width: 22vh;
+        padding-top: 2vh;
+        padding-left: 3vh;
+        padding-right: 1vh; 
+        padding-bottom: 2vh;
+    }
+
+   .apoio{
+        flex-direction: column;
+   }
+   .apoio section{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: row;
+   }
+   .apoio section a{
+        margin-left: 18px;
+   }
+
+   #footerMobile{
+        display: flex;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bold;
+   }
+   #footerMobile img{
+        width: 80px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+   }
+   footer{
+        flex-direction: column;
+        
+   }
+   footer section h2{
+        margin-top: 27px;
+        margin-left: 11vw;
+        text-align: center;
+        width: 150px;
+   }
+   footer section ul li{ 
+        text-align: center;
+        width: 150px;
+        margin-left: 11vw;
+   }
+
+}
